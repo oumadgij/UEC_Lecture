@@ -10,18 +10,10 @@ UCLASS()
 class UEC_LECTURE_API ACPPVariable : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ACPPVariable();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
 
 private:
 	// PrintStringŠÖ”‚ÌDuration‚Éİ’è‚·‚é•Ï”

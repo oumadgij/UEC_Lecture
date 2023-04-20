@@ -5,14 +5,6 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetStringLibrary.h"
 
-// Sets default values
-ACPPVariable::ACPPVariable()
-{
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
-}
-
 // Called when the game starts or when spawned
 void ACPPVariable::BeginPlay()
 {
@@ -40,11 +32,3 @@ void ACPPVariable::BeginPlay()
 	//Textのカラー情報に変数TextColorを設定                     // Textのカラー情報に変数TextColorを設定
 	UKismetSystemLibrary::PrintString(this, Message, true, true, TextColor, Duration);
 }
-
-// Called every frame
-void ACPPVariable::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
