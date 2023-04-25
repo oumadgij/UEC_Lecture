@@ -21,5 +21,5 @@ private:
 
 	//PrintStringŠÖ”‚ÌTextColor‚Éİ’è‚·‚é•Ï”
 	const FLinearColor TextColor = FLinearColor(0.0, 0.66, 1.0);
-
+	const FLinearColor Textcolor = FColor(255, 255, 0);
 };
