@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/ArrowComponent.h"
+#include "Components/PointLightComponent.h"
 #include "CPPComponent.generated.h"  //<-‚±‚ê‚Íˆê”Ô‰º!!!
 
 UCLASS()
@@ -36,6 +37,10 @@ public:
 	// Arrow Component
 	UPROPERTY(VisibleAnywhere)
 	UArrowComponent* Arrow;
+
+	//PointLight Component
+	UPROPERTY(EditAnywhere)
+	UPointLightComponent* PointLight;
 
 	// Sets default values for this actor's properties
 	ACPPComponent();

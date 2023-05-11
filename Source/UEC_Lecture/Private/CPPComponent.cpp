@@ -33,6 +33,15 @@ ACPPComponent::ACPPComponent()
 
 	// ArrowComponent‚ğStaticMeshComponent‚ÉAttach‚·‚é
 	Arrow->SetupAttachment(StaticMesh);
+
+	//PointLightComponent‚ğì¬‚·‚é
+	PointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("PointLightComponent"));
+
+	//PointLightComponent‚ÌˆÊ’u‚ğİ’è‚·‚é
+	PointLight->SetRelativeLocation(FVector(130.0f, 0.0f, 0.0f));
+
+	//PointLightComponent‚ğStaticMeshComponent‚ÉAttach‚·‚é
+	PointLight->SetupAttachment(StaticMesh);
 }
 
 // Called when the game starts or when spawned
