@@ -46,5 +46,6 @@ protected:
 	void ReleasedH();
 
 	void PressedActionPrintCalcResult();
+	void AxisPrint(float f);
 
 };

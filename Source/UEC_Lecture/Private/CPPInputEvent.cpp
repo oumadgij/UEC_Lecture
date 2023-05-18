@@ -105,6 +105,7 @@ void ACPPInputEvent::SetupInput()
 
 	// ActionMappingsに設定したActionをバインドする
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ACPPInputEvent::PressedActionPrintCalcResult);
+	InputComponent->BindAxis("MoveForward", this, &ACPPInputEvent::AxisPrint);
 }
 
 void ACPPInputEvent::PressedH()
@@ -123,4 +124,10 @@ void ACPPInputEvent::PressedActionPrintCalcResult()
 {
 	// 計算結果を出力する処理
 	PrintCalcResult(CalcType, CalcVarA, CalcVarB, Duration);
+}
+
+void ACPPInputEvent::AxisPrint(float f)
+{
+	// 計算結果を出力する処理
+	PrintCalcResult(ECPPCalcType::Subtract, CalcVarA, CalcVarB, Duration);
 }
