@@ -29,9 +29,11 @@ public:
 		UStaticMeshComponent* StaticMesh;
 
 	// 親クラスのメンバ関数 
+	UFUNCTION(BlueprintCallable,Category=CPP_And_Blueprint)
 	void CallParentFunc();
 
 	// 親クラスのデータメンバ
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category=Default)
 	int VarParentNum = 10;
 
 };
