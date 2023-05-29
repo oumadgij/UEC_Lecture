@@ -22,6 +22,7 @@ protected:
 
 public:
 	// 子クラスのメンバ関数
+	UFUNCTION(BlueprintCallable, Category = CPP_And_Blueprint)
 	void CallChildFunc();
 
 	// 子クラスのデータメンバ
