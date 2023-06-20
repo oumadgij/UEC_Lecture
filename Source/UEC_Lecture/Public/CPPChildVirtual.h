@@ -15,6 +15,6 @@ class UEC_LECTURE_API ACPPChildVirtual : public ACPPParentVirtual
 	GENERATED_BODY()
 
 public:
-	void SetPoint(int myPoint);
+	void SetPoint(int myPoint) override;
 	
 };

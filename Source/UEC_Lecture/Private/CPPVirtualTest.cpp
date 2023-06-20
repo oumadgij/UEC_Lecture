@@ -14,6 +14,7 @@ void ACPPVirtualTest::BeginPlay()
 	Super::BeginPlay();
 
 	// CPPChildRedefinitionを生成する
+	//親クラスの変数に子クラスのデータを入れている
 	ACPPParentRedefinition* redefinitionActor = GetWorld()->SpawnActor<ACPPChildRedefinition>(ACPPChildRedefinition::StaticClass());
 	// SetPointを呼び出す
 	redefinitionActor->SetPoint(100);
@@ -21,6 +22,7 @@ void ACPPVirtualTest::BeginPlay()
 	UKismetSystemLibrary::PrintString(this, FString::Printf(TEXT("Redefinition Point : %d"), redefinitionActor->GetPoint()), true, true, FColor::Cyan, 10.f);
 
 	// CPPChildVirtualを生成する
+	// 親クラスの変数に子クラスのデータを入れている
 	ACPPParentVirtual* virautalActor = GetWorld()->SpawnActor<ACPPChildVirtual>(ACPPChildVirtual::StaticClass());
 	// SetPointを呼び出す
 	virautalActor->SetPoint(100);
