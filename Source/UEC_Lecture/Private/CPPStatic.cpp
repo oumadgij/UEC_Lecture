@@ -5,3 +5,8 @@
 
 // Static•Ï”‚ğ‰Šú‰»‚·‚é
 int ACPPStatic::staticPoint = 400;
+
+void ACPPStatic::SetPoint(int myPoint)
+{
+	staticPoint = myPoint;
+}

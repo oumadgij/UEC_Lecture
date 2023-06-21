@@ -12,6 +12,9 @@ class UEC_LECTURE_API ACPPStatic : public AActor
 	GENERATED_BODY()
 	
 public:	
+	// staticƒƒ“ƒoŠÖ”
+	static void SetPoint(int myPoint);
+
 	// Ã“Iƒƒ“ƒo•Ï”
 	static int staticPoint;
 
